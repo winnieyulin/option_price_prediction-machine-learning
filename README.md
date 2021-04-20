@@ -5,10 +5,17 @@ The Black-Scholes option pricing formula provides an approach for valuing such o
 
 The 1997 Nobel Prize in Economics was awarded for the Black-Scholes formula because it works remarkably well in practice. However, in this project we are going to attempt to build statistical/ML models to perform the same task. Often times such models are able to outperform Black-Scholes.
 You will find two data sets on Blackboard: option_train.csv and option_test_wolabel.csv. The training data set has information on 1,680 separate options. In particular, for each option we have recorded
+
 • Value (C): Current option value
+
 • S: Current asset value
+
 • K: Strike price of option
+
 • r: Annual interest rate
+
 • tau: Time to maturity (in years)
+
 • BS: The Black-Scholes formula was applied to this data (using some 𝜎) to get C_pred.
+
 and If an option has C_pred – C > 0, i.e., the prediction over estimated the option value, we associate that option by (Over); otherwise, we associate that option with (Under).
